@@ -2,12 +2,12 @@
 using namespace std;
 int main()
 {
-	int a[5];
-	for (int i = 0; i < 5; i++)
+	int a[5]; // initializing an array
+	for (int i = 0; i < 5; i++) // taking input from the user
 	{
 		cout << "Enter value number " << i + 1 << " : " << endl;
 		cin >> a[i];
-		while (cin.fail())
+		while (cin.fail()) // Wrong input check
 		{
 			cout << "Incorrect! Enter a number again : ";
 			cin.clear();
@@ -15,7 +15,7 @@ int main()
 			cin >> a[i];
 		}
 	}
-	for (auto b : a)
+	for (auto b : a) // using auto to print out all the values
 	{
 		cout << b << endl;
 	}
